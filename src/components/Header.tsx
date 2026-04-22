@@ -28,8 +28,8 @@ export default function Header() {
     // Determine if page has transparent hero (home page)
     const isHome = location.pathname === '/';
     const headerBg = scrolled || !isHome
-        ? 'bg-[#050505]/90 backdrop-blur-md border-b border-white/10'
-        : 'bg-transparent border-b border-transparent';
+        ? 'bg-[#050505]/95 backdrop-blur-lg border-b border-white/10 shadow-xl'
+        : 'bg-transparent border-b border-transparent drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]';
 
     return (
         <>
